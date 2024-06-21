@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>appointment</title>
+      <style>
+        hr{
+            border: 2px solid red;
+            width: 550px;
+        }
+
+        form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 140px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        input[type="tel"],
+        textarea {
+            width: calc(100% - 150px);
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #date{
+            width:130;
+        }
+        
+        #time{
+            width:100px;
+        }
+
+        #fname,#lname,#city,#state,#phone{
+             width:auto;
+        }
+
+        #query{
+            width: 300px;
+            height: 80px;
+        }
+
+       input[type="radio"]{
+             margin: 5px;
+       }
+        
+        button {
+            display: block;
+            width: 50px;
+            height: 25px;
+            padding: 10px;
+            color: black;
+            text-align: center;
+            padding-bottom: 20px;
+            padding-right: 40px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       .q1{
+           display: flex;
+           align-items: center;
+       }
+       .c1{
+        display: flex;
+       }
+       .c2{
+        display: flex-wrap;
+        justify-content: flex-end;
+        margin-left: 50px;
+       }
+       button{
+        margin-left: 135px;
+       }
+      </style>
+    </head>
+    <body>
+      <h1 style="text-align: center;">Doctor Appointment Form</h1>
+      <hr/><br>
+      <form>
+        <label for="date">Appointment Date</label>
+        <input type="date" id="date"><br><br>
+
+        <label for="time">Appointment Time</label>
+        <input type="time" id="time"><br><br>
+
+        <label for="fname">Name</label>
+        <input type="text" id="fname" placeholder="First">
+        <input type="text" id="lname" placeholder="Last"><br><br>
+
+        <label>Gender</label>
+        <label style="width: 60px;">
+            Male<input type="radio" value="male"/>
+        </label>
+        <label>
+            Female<input type="radio" value="female"/>
+        </label><br/><br/>
+
+        
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="####"><br><br>
+
+        <label for="address">Address</label>
+        <input type="text" id="city" placeholder="city">
+        <input type="text" id="state" placeholder="state"><br><br>
+
+        <div class="q1">
+        <label for="query" id="q1">Your Query</label>
+        <textarea id="query" name="query"></textarea><br><br>
+       </div>
+
+       <div class="c1">
+        <p>Appointment<br> Type<br></p>
+        <div class="c2">
+        <p style="text-align:right; margin-bottom: 0px">Select which appointment type(s) you require</p>
+        <input type="checkbox" id="cervix" value="cervix_checkup">
+        <label for="cervix">Cervix checkup</label><br>
+        <input type="checkbox" id="heart" value="heart_checkup">
+        <label for="heart">Heart checkup</label><br>
+        <input type="checkbox" id="eye" value="eye_checkup">
+        <label for="eye">Eye check-up</label><br>
+        <input type="checkbox" id="hearing" value="hearing_test">
+        <label for="hearing">Hearing Test</label><br><br>
+    </div>
+       </div>
+        <button type="submit">Send</button>
+      </form>
+    </body>
+</html>
