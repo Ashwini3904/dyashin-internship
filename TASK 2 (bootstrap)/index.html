@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BizLand</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">BizLand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="welcome-section">
+        <div>
+            <h1>Welcome to <span class="text-primary">BizLand</span></h1>
+            <p>We are team of talented designers making websites with Bootstrap</p>
+            <div class="mt-4">
+                <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h1>Check Our <a href="#">Portfolio</a></h1>
+        <div class="filter-buttons">
+            <button class="active" onclick="filterSelection('all')">All</button>
+            <button onclick="filterSelection('app')">App</button>
+            <button onclick="filterSelection('card')">Card</button>
+            <button onclick="filterSelection('web')">Web</button>
+        </div>
+        <div class="portfolio-container">
+            <div class="portfolio-item app">
+                <img src="img/masonry-portfolio/masonry-portfolio-1.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item card">
+                <img src="img/masonry-portfolio/masonry-portfolio-2.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item web">
+                <img src="img/masonry-portfolio/masonry-portfolio-3.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item app">
+                <img src="img/masonry-portfolio/masonry-portfolio-4.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item card">
+                <img src="img/masonry-portfolio/masonry-portfolio-5.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item web">
+                <img src="img/masonry-portfolio/masonry-portfolio-6.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item app">
+                <img src="img/masonry-portfolio/masonry-portfolio-7.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item card">
+                <img src="img/masonry-portfolio/masonry-portfolio-8.jpg" alt="Portfolio Item">
+            </div>
+            <div class="portfolio-item web">
+                <img src="img/masonry-portfolio/masonry-portfolio-9.jpg" alt="Portfolio Item">
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <h2>Our Hardworking <span>Team</span></h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="img/team/team-1.jpg" alt="Walter White">
+                <h3>Walter White</h3>
+                <p>Chief Executive Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team/team-2.jpg" alt="Sarah Jhonson">
+                <h3>Sarah Jhonson</h3>
+                <p>Product Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team/team-3.jpg" alt="William Anderson">
+                <h3>William Anderson</h3>
+                <p>CTO</p>
+            </div>
+            <div class="team-member">
+                <img src="img/team/team-4.jpg" alt="Amanda Jepson">
+                <h3>Amanda Jepson</h3>
+                <p>Accountant</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h1>Need Help? <a href="#">Contact Us</a></h1>
+        <form class="contact-form">
+            <div class="input-row">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+            </div>
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" rows="5" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
